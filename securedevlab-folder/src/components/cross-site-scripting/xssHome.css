@@ -1,0 +1,147 @@
+.page-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  margin-top: 80px; /* Height of navbar + padding */
+  flex: 1;
+  background-color: #f8f9fa;
+}
+
+.xss-home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.xss-home-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.lab-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.lab-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.lab-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lab-card h2 {
+  font-size: 1.5rem;
+  color: #1a237e;
+  margin-bottom: 1rem;
+}
+
+.lab-card p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.lab-link {
+  display: inline-block;
+  background-color: #1a237e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.lab-link:hover {
+  background-color: #283593;
+}
+
+.lab-link.completed {
+  background-color: #2e7d32;
+  cursor: pointer;
+}
+
+.lab-link.completed:hover {
+  background-color: #1b5e20;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  text-align: center;
+  padding: 2rem;
+  color: #dc3545;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .xss-home-container {
+    padding: 1rem;
+  }
+
+  .xss-home-container h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .labs-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .lab-card {
+    padding: 1.5rem;
+  }
+} 

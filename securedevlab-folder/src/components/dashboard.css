@@ -1,0 +1,60 @@
+.dashboard-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-main {
+  margin-top: 80px; /* Height of navbar + some padding */
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-title {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+.display-5 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    margin-top: 60px;
+    padding: 1rem 0;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+} 

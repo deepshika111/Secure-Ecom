@@ -1,0 +1,226 @@
+.page-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 60px;
+}
+
+.union-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.union-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.union-header h1 {
+  color: #1a237e;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.lab-description {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.union-content {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.lab-section {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.lab-section h2 {
+  color: #1a237e;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.input-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.injection-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.run-button {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.run-button:hover {
+  background-color: #283593;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.result-section {
+  margin-top: 1.5rem;
+}
+
+.result-section h3 {
+  color: #1a237e;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.result-display {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h5 {
+  color: #1a237e;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  padding: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.stay-button {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.stay-button:hover {
+  background-color: #bdbdbd;
+}
+
+.leave-button {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.leave-button:hover {
+  background-color: #283593;
+}
+
+@media (max-width: 768px) {
+  .union-container {
+    padding: 1rem;
+  }
+
+  .union-header h1 {
+    font-size: 2rem;
+  }
+
+  .lab-description {
+    font-size: 1rem;
+  }
+
+  .lab-section {
+    padding: 1.5rem;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .run-button {
+    width: 100%;
+  }
+} 

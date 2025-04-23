@@ -1,0 +1,4 @@
+/securedevlab-folder/node_modules
+/backend/venv
+/securedevlab-folder/node_modules/.cache/default_developement
+.DS_Store
